@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quality feedbacks for your SaaS products">
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&sisplay=swap" rel="stylesheet">
+
+    <title>Simple Feature Section | devChallenges.io</title>
+
+    <!--optemize loading-->
+    <link rel="preload" as="image" href="resources/photo_1@2x.png">
+    <link rel="preload" as="image" href="resources/photo_2@2x.png">
+    <link rel="preload" as="image" href="resources/photo_3@2x.png">
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background: url("resources/Background_image.svg") #121826;
+        font-family: "Outfit", sans-serif;
+      }
+      main{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      /*Heading styles*/
+      main .details{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      main .details h1{
+        font-size: 40px;
+        color: #E5E7EB;
+        width: 400px;
+        align-self: center;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+      main .details p{
+        color: #9DA3AE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+      }
+
+      /*cards styles*/
+      main .cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+      }
+      main .crad-items{
+        width: 310px;
+        background-color: #212936;
+        /* Box-shadow */
+        box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+        flex-shrink: 0;
+        flex-grow: 0;
+        padding: 20px 25px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      main .crad-items .sticker{
+        background-color: #DEE9FC;
+        padding: 15px;
+        flex-grow: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main .crad-items .sticker p{
+        font-size: 20px;
+      }
+      main .crad-items img{
+        border-radius: 10px;
+        width: 260px;
+        height: auto;
+      }
+      .crad-items h2{
+        color: #E5E7EB;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 600;
+      }
+      .crad-items p{
+        color: #9DA3AE;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+      }
+      #color1{
+        background-color: #FCEED8;
+      }
+      #color3{
+        background-color: #FBE5E6;
+      }
+
+      /*screens from 1024px to 1349px*/
+      @media (min-width: 1024px) and (max-width: 1349px) {
+        body {
+          background: url("resources/Background_image@2x.png") #121826;
+        }
+        main{
+        padding: 20px 40px;
+        }
+        main .details h1{
+        width: 450px;
+        }
+      }
+      /* wider than 1350px screens*/
+      @media (min-width: 1350px) {
+        body {
+          background: url("resources/Background_image@3x.png") #121826;
+        }
+        main{
+        padding: 20px;
+        }
+        main .details h1{
+        width: 420px;
+        }
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <main>
+      <div class="details">
+        <h1>Quality feedbacks for your SaaS products</h1>
+        <p>The blocks & components you need</p>
+      </div>
+      <div class="cards-container">
+        <div class="crad-items">
+          <div class="sticker" id="color1"><p>✋</p></div>
+          <h2>Collect Feedback at Multiple Touchpoints</h2>
+          <p>Provide a comprehensive understanding of the customer experience.</p>
+          <picture>
+            <img src="resources/photo_2.png?v=1.0" alt="photo_2">
+            <source src="resources/photo_2@2x.png" type="image/jpg">
+          </picture>
+        </div>
+
+        <div class="crad-items">
+          <div class="sticker"><p>🥅</p></div>
+          <h2>Ask Targeted and Specific Questions</h2>
+          <p>Avoid vague or open-ended questions that may not yield actionable insights.</p>
+          <picture>
+            <img src="resources/photo_1.png?v=1.0" alt="photo_1">
+            <source src="resources/photo_1@2x.png" type="image/jpg">
+          </picture>
+        </div>
+
+        <div class="crad-items">
+          <div class="sticker" id="color3"><p>💬</p></div>
+          <h2>Prioritize and Respond to Feedback</h2>
+          <p>Communicate the changes or improvements you've made in response to their feedback.</p>
+          <picture>
+            <img src="resources/photo_3.png?v=1.0" alt="photo_1">
+            <source src="resources/photo_3@2x.png" type="image/jpg">
+          </picture>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
