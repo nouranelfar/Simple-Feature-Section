@@ -23,8 +23,9 @@
       body {
         height: 100vh;
         background: url("resources/Background_image.svg") #121826;
+        background-size: cover;
+        background-repeat: no-repeat;
         font-family: "Outfit", sans-serif;
-        font-display: swap;
       }
       main{
         height: 100%;
@@ -39,7 +40,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding-top: 40px;
+        padding-top: 30px;
       }
       main .details h1{
         font-size: 40px;
@@ -47,6 +48,8 @@
         align-self: center;
         font-weight: 600;
         line-height: 1.4;
+        width: 400px;
+        height: auto;
       }
       main .details p{
         color: #9DA3AE;
@@ -70,7 +73,7 @@
         box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
         flex-shrink: 0;
         flex-grow: 0;
-        padding: 20px 25px;
+        padding: 25px;
         border-radius: 12px;
         display: flex;
         flex-direction: column;
@@ -80,8 +83,8 @@
         background-color: #DEE9FC;
         padding: 15px;
         flex-grow: 0;
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -143,7 +146,7 @@
   <body>
     <main>
       <div class="details">
-        <h1 width = 400px; height = auto;>Quality feedbacks for your SaaS products</h1>
+        <h1>Quality feedbacks for your SaaS products</h1>
         <p>The blocks & components you need</p>
       </div>
       <div class="cards-container">
@@ -153,7 +156,7 @@
           <p>Provide a comprehensive understanding of the customer experience.</p>
           <picture>
             <source src="resources/photo_2@2x.png" type="image/jpg">
-            <img loading="eager" src="resources/photo_2.png?v=1.0" width = 267px; height = 193px; alt="photo_2">
+            <img loading="eager" src="resources/photo_2.png?v=1.0" width ="267" height ="193" alt="photo_2">
           </picture>
         </div>
 
@@ -163,7 +166,7 @@
           <p>Avoid vague or open-ended questions that may not yield actionable insights.</p>
           <picture>
             <source src="resources/photo_1@2x.png" type="image/jpg">
-            <img loading="eager" src="resources/photo_1.png?v=1.0" width = 267px; height = 193px; alt="photo_1">
+            <img loading="eager" src="resources/photo_1.png?v=1.0" width ="267" height ="193" alt="photo_1">
           </picture>
         </div>
 
@@ -173,7 +176,7 @@
           <p>Communicate the changes or improvements you've made in response to their feedback.</p>
           <picture>
             <source src="resources/photo_3@2x.png" type="image/jpg">
-            <img loading="eager" src="resources/photo_3.png?v=1.0" width = 267px; height = 193px; alt="photo_1">
+            <img loading="eager" src="resources/photo_3.png?v=1.0" width ="267" height ="193" alt="photo_1">
           </picture>
         </div>
       </div>
