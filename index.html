@@ -11,13 +11,8 @@
       type="image/x-icon"
       sizes="96x96"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <title>Simple Feature Section | devChallenges.io</title>
-
-    <link rel="preload" as="image" href="resources/photo_1.png">
-    <link rel="preload" as="image" href="resources/photo_2.png">
-    <link rel="preload" as="image" href="resources/photo_3.png">
 
     <style>
       * {
@@ -29,13 +24,11 @@
         height: 100vh;
         background: url("resources/Background_image.svg") #121826;
         font-family: "Outfit", sans-serif;
+        font-display: swap;
       }
       main{
         height: 100%;
-        padding: 10% 5%;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         gap: 40px;
       }
@@ -46,11 +39,11 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        padding-top: 40px;
       }
       main .details h1{
         font-size: 40px;
         color: #E5E7EB;
-        width: 400px;
         align-self: center;
         font-weight: 600;
         line-height: 1.4;
@@ -68,6 +61,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 40px;
+        padding-bottom: 40px;
       }
       main .crad-items{
         width: 315px;
@@ -98,8 +92,6 @@
       }
       main .crad-items img{
         border-radius: 10px;
-        width: 267px;
-        height: 193px;
       }
       .crad-items h2{
         color: #E5E7EB;
@@ -151,7 +143,7 @@
   <body>
     <main>
       <div class="details">
-        <h1>Quality feedbacks for your SaaS products</h1>
+        <h1 width = 400px; height = auto;>Quality feedbacks for your SaaS products</h1>
         <p>The blocks & components you need</p>
       </div>
       <div class="cards-container">
@@ -160,8 +152,8 @@
           <h2>Collect Feedback at Multiple Touchpoints</h2>
           <p>Provide a comprehensive understanding of the customer experience.</p>
           <picture>
-            <img loading="eager" src="resources/photo_2.png?v=1.0" alt="photo_2">
             <source src="resources/photo_2@2x.png" type="image/jpg">
+            <img loading="eager" src="resources/photo_2.png?v=1.0" width = 267px; height = 193px; alt="photo_2">
           </picture>
         </div>
 
@@ -170,8 +162,8 @@
           <h2>Ask Targeted and Specific Questions</h2>
           <p>Avoid vague or open-ended questions that may not yield actionable insights.</p>
           <picture>
-            <img loading="eager" src="resources/photo_1.png?v=1.0" alt="photo_1">
             <source src="resources/photo_1@2x.png" type="image/jpg">
+            <img loading="eager" src="resources/photo_1.png?v=1.0" width = 267px; height = 193px; alt="photo_1">
           </picture>
         </div>
 
@@ -180,8 +172,8 @@
           <h2>Prioritize and Respond to Feedback</h2>
           <p>Communicate the changes or improvements you've made in response to their feedback.</p>
           <picture>
-            <img loading="eager" src="resources/photo_3.png?v=1.0" alt="photo_1">
             <source src="resources/photo_3@2x.png" type="image/jpg">
+            <img loading="eager" src="resources/photo_3.png?v=1.0" width = 267px; height = 193px; alt="photo_1">
           </picture>
         </div>
       </div>
